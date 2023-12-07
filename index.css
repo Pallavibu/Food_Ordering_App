@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.logo {
+  width: 90px;
+  height: 100px;
+}
+
+.nav-items > ul {
+  font-size: 18px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-card {
+  padding: 5px;
+  margin: 10px;
+  width: 200px;
+}
+
+.res-card:hover {
+  border: 1px solid rgb(107, 98, 98);
+  -webkit-box-shadow: 10px 10px 46px 5px rgba(206, 212, 214, 1);
+  -moz-box-shadow: 10px 10px 46px 5px rgba(206, 212, 214, 1);
+  box-shadow: 10px 10px 46px 5px rgba(206, 212, 214, 1);
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.filter-btn {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  margin: 10px;
+  height: 300px;
+  width: 200px;
+  background-color: rgb(217, 213, 213);
+}
+
+.login {
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+}
+
+.search-box {
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
+} */
