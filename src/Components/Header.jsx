@@ -20,6 +20,8 @@ const Header = () => {
   //console.log("cartitems array", cartItems);
 
   const handleImageClick = () => {
+
+    
     setListVisibility(!isListVisible);
 
     console.log(isListVisible);
