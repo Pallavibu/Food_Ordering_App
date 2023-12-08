@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 //Tailwind
 const Header = () => {
   const [btnName, setbtnName] = useState("Login");
+  const [isListVisible, setListVisibility] = useState(false);
 
   const onlineStatus = useOnlineStatus();
 
@@ -18,20 +19,20 @@ const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
   //console.log("cartitems array", cartItems);
 
-  return (
-    <div className="flex flex-col sm:bg-yellow-300 md:bg-purple-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-500">
-      <div className="logo-container ">
-        <img className="w-28 sm:w-16 sm:p-2" src={LOGO_LINK} />
-      </div>
-<div>
+  const handleImageClick = () => {
+    setListVisibility(!isListVisible);
 
-</div>
-      <div className="flex items-center ">
-        <ul className="flex p-2 m-2  ">
-          <div>
-            <img className="w-16 z-50 fixed top-4 right-2 " src={HAMBURGER} />
-          </div>
-          <li className="flex px-2.5 ">
+    console.log(isListVisible);
+  };
+  return (
+    <div className="sm:flex py-5 justify-end gap-10 sm:bg-yellow-300 md:bg-purple-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-500">
+      <div className="logo-container mx-auto ">
+        <img className="w-28 sm:w-16 sm:p-2 " src={LOGO_LINK} />
+      </div>
+
+      <div className="mx-auto ">
+        <ul className={"flex p-2 m-2 justify-end ${isListVisible ? 'block' : 'hidden'} sm:hidden md:block"}>
+          <li className="flex px-2 ">
             Status :
             {onlineStatus ? (
               <svg
@@ -80,9 +81,17 @@ const Header = () => {
           </button>
           <li className="px-2.5 font-bold ">{loggedInUser}</li>
         </ul>
+
+        <div className="sm:block sm md:hidden  ">
+          <img
+            className="w-16 top-4 right-1"
+            src={HAMBURGER}
+            alt="Clickable image"
+            onClick={handleImageClick}
+          />
+        </div>
       </div>
     </div>
   );
 };
-
 export default Header;
