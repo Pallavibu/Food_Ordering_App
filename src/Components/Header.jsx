@@ -24,7 +24,7 @@ const Header = () => {
         <img className="w-28 sm:w-16 sm:p-2" src={LOGO_LINK} />
       </div>
 <div>
-<SiBurgerking />
+
 </div>
       <div className="flex items-center ">
         <ul className="flex p-2 m-2  ">
