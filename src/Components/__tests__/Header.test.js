@@ -79,5 +79,6 @@ it("should change login button to logout onclick", () => {
 
   const logoutButton = screen.getByRole("button", { name: "Logout" });
 
-  expect(logoutButton).toBeInTheDocument();
+  // expect(logoutButton).toBeInTheDocument();
+  expect (screen.getByText("Dashboard")).toBeInTheDocument();
 });
