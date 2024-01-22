@@ -64,9 +64,9 @@ const Body = () => {
   }
 
   return (
-    <div className="body">
+    <div className="body  ">
       <div className="filter flex">
-        <div className="search m-4 p-4">
+        <div className="search mx-10 p-5">
           <input
             type="text"
             data-testid = "searchInput"
@@ -113,7 +113,7 @@ const Body = () => {
           />
         </div>
       </div>
-      <div className="res-container flex flex-wrap">
+      <div className="res-container flex flex-wrap gap-2 mx-8">
         {filteredRestaurant?.map((restaurant) => (
           <Link
             key={restaurant.info.id}
