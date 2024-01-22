@@ -12,7 +12,7 @@ const RestaurantCard = (props) => {
   return (
     <div
       data-testid="resCard"
-      className="m-4 p-4 w-[250px] rounded-md"
+      className="m-2 p-2 w-[250px] rounded-md"
       style={{
         backgroundColor: "#f0f0f0",
       }}

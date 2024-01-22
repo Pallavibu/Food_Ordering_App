@@ -27,13 +27,13 @@ const Header = () => {
     console.log(isListVisible);
   };
   return (
-    <div className="sm:flex py-4 justify-end gap-12 sm:bg-yellow-300 md:bg-purple-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-pink-200">
+    <div className="flex py-4 justify-end gap-12 sm:bg-yellow-300 md:bg-purple-300 lg:bg-pink-300 ">
       <div className="logo-container mx-auto ">
-        <img className="w-28 sm:w-16 sm:p-2 " src={LOGO_LINK} />
+        <img className=" sm:w-16 sm:m-4   " src={LOGO_LINK} />
       </div>
 
       <div className="mx-auto ">
-        <ul className={"flex p-2 m-2 justify-end ${isListVisible ? 'block' : 'hidden'}"}>
+        <ul className={"flex p-2 m-2 justify-end ${isListVisible ? 'block' : 'hidden'} " }>
           <li className="flex px-2 ">
             Status :  
             {onlineStatus ? (
@@ -84,14 +84,7 @@ const Header = () => {
           <li className="px-3 font-bold ">{loggedInUser}</li>
         </ul>
 
-        <div className="sm:block sm md:hidden  ">
-          <img
-            className="w-16 top-4 right-1"
-            src={HAMBURGER}
-            alt="Clickable image"
-            onClick={handleImageClick}
-          />
-        </div>
+       
       </div>
     </div>
   );
